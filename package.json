@@ -1,0 +1,25 @@
+{
+  "name": "puza-lang",
+  "displayName": "Puzzle Algorithm Syntax",
+  "description": "Makes reading puzzle algorithms easier by using a code editor.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "puza",
+      "aliases": ["Puza", "puza"],
+      "extensions": [".puza",".pz",".pza",".puz",".txt"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "puza",
+      "scopeName": "source.puza",
+      "path": "./syntaxes/puza.tmLanguage.json"
+    }]
+  }
+}

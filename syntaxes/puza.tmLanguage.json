@@ -1,0 +1,37 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Puza",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},	
+		{
+			"include": "#prime"
+		},
+		{
+			"include": "#operator"
+		},
+		{
+			"include": "#angled-brackets"
+		}
+	],
+	"repository": {
+		"prime": {
+			"match": "'",
+			"name": "invalid.illegal"
+		},
+		"keywords":{
+			"name": "keyword.move.puza",
+			"match": "F|R|U|L|B|D"
+		},
+		"operator":{
+			"match": "=",
+			"name": "keyword.other"
+		},
+		"angled-brackets":{
+			"match": "<|>",
+			"name": "invalid.illegal"
+		}		
+	},
+	"scopeName": "source.puza"
+}
